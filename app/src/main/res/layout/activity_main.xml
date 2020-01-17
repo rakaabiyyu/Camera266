@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/photoDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/takePhoto"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="CAPTURE" />
+
+            <Button
+                android:id="@+id/choosePhoto"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="GALLERY" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
